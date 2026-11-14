@@ -1,5 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+/** @type {(phase: string) => import('next').NextConfig} */
+const nextConfig = (phase) => ({
+  ...(phase === "phase-development-server" ? { distDir: ".next-dev" } : {}),
   reactStrictMode: true,
   devIndicators: false,
   eslint: {
@@ -14,6 +15,7 @@ const nextConfig = {
       },
     ];
   },
-};
+});
 
 export default nextConfig;
+

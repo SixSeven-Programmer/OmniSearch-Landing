@@ -23,6 +23,12 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules", "LANDING PAGE/.next", "LANDING PAGE/node_modules"]
+  "exclude": [
+    "node_modules",
+    ".next-dev",
+    "dist",
+    "LANDING PAGE/.next",
+    "LANDING PAGE/.next-dev",
+    "LANDING PAGE/node_modules"
+  ]
 }
-
