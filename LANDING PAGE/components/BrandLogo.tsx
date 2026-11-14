@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 interface BrandLogoProps {
   className?: string;
@@ -29,7 +28,7 @@ export function BrandLogo({
       <span
         className={`${badgeDimensions} relative inline-flex items-center justify-center rounded-[9px] bg-[#06141B] dark:bg-[#11212D] border border-[#253745] shadow-subtle overflow-hidden shrink-0`}
       >
-        <Image
+        <img
           src="/assets/aistudio/OmniSearch_Logo_f0580944.png"
           alt="OmniSearch logo"
           width={pixelSize}

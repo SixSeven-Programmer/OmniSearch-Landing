@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import {
   Search,
   FileText,
@@ -298,7 +297,7 @@ export function ProductMockup() {
         <div className="hidden lg:flex lg:col-span-1 flex-col items-center justify-between py-4 bg-[#06141B] dark:bg-[#000000]/70 border-r border-[#9BA8AB]/50 dark:border-[#253745]">
           <div className="flex flex-col items-center gap-4">
             <div className="w-9 h-9 rounded-[10px] bg-[#11212D] border border-[#253745] flex items-center justify-center overflow-hidden p-1">
-              <Image
+              <img
                 src="/assets/aistudio/OmniSearch_Logo_f0580944.png"
                 alt="OmniSearch logo"
                 width={32}
