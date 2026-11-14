@@ -1,5 +1,5 @@
 import React from "react";
-import ResponsiveHeroBanner from "@/components/ui/responsive-hero-banner";
+import ResponsiveHeroBanner from "./ui/responsive-hero-banner";
 import { ProductMockup } from "./ProductMockup";
 import { WINDOWS_DOWNLOAD_URL } from "../lib/site-config";
 

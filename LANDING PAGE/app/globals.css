@@ -11,17 +11,51 @@
     --omnisearch-text-400: #9BA8AB;
     --omnisearch-text-200: #CCD0CF;
     --omnisearch-spark: #38BDF8;
+    --bg-base: #EEF1F0;
+    --text-primary: #06141B;
+  }
+
+  .dark {
+    --bg-base: #000000;
+    --text-primary: #CCD0CF;
   }
 
   body {
-    background-color: var(--omnisearch-bg-950);
-    color: var(--omnisearch-text-200);
+    background-color: var(--bg-base);
+    color: var(--text-primary);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     min-height: 100vh;
     overflow-x: hidden;
   }
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-slide-in-1 {
+  animation: fadeSlideIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both;
+}
+
+.animate-fade-slide-in-2 {
+  animation: fadeSlideIn 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+
+.animate-fade-slide-in-3 {
+  animation: fadeSlideIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
+}
+
+.animate-fade-slide-in-4 {
+  animation: fadeSlideIn 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both;
 }
 
 @media (prefers-reduced-motion: reduce) {
