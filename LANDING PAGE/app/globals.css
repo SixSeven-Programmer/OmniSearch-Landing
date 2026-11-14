@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --omnisearch-bg-950: #000000;
+    --omnisearch-bg-900: #11212D;
+    --omnisearch-bg-800: #253745;
+    --omnisearch-steel-600: #4A5C6A;
+    --omnisearch-text-400: #9BA8AB;
+    --omnisearch-text-200: #CCD0CF;
+    --omnisearch-spark: #38BDF8;
+  }
+
+  body {
+    background-color: var(--omnisearch-bg-950);
+    color: var(--omnisearch-text-200);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
